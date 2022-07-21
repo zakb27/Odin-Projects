@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: logo_font;
+    src: url(images/Madrigal-mLJ92.ttf);
+}
+
+body {
+    margin:0;
+    width:100%;
+    height:100%;
+}
+
+main{
+    display: flex;
+}
+
+
+
+.logo{
+    width:30%;
+    height:10vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.logo h1{
+    font-family: logo_font, sans-serif;
+    text-align: center;
+    font-size: 3.5rem;
+    color:white;
+}
+
+h1 span{
+    font-size:6rem;
+}
+
+
+
+.big{
+    width:70%;
+    height:100vh;
+    background-color: #fefae0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+.left{
+    padding-left:3vw;
+}
+
+.explanation{
+    width:50%;
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+}
+
+.form_container{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    flex-wrap: wrap;
+    opacity: 50%;
+}
+
+input{
+    background-color: #fefae0;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 10px;
+    height:30px;
+}
+
+input:focus{
+    border: 2px solid cadetblue;
+
+}
+
+
+
+
+
+
+
+
+/*Background animation*/
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
